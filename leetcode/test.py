@@ -1,2 +1,3 @@
-height = [1,8,6,2,5,4,8,3,7]
-print(len(height))
+height = [1,2,3,4]
+print(height.pop(1))
+print(height)
