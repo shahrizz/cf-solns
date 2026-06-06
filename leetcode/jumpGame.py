@@ -1,12 +1,11 @@
-nums = [2, 3, 1, 1, 4]
+nums = [3, 2, 1, 0, 4]
 furthest = 0
-first = 0
-last = len(nums) - 1
-i = 0
-while True:
-    if i >= last:
-        print(True)
+
+for i in range(len(nums)):
+    if i > furthest:
+        print(False)
         break
-    elif i >= furthest:
-        furthest = i
-    i += nums[i]
+
+    furthest = max(furthest, i + nums[i])
+
+print(True)
