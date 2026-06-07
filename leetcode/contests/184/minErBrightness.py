@@ -18,4 +18,4 @@ active_time += end - start + 1
 
 bulbs_needed = (brightness + 2) // 3
 
-print(bulbs_needed * active_time)
+return bulbs_needed * active_time
