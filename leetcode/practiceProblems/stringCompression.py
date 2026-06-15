@@ -9,7 +9,7 @@
 # corespond_key = list(h.keys())
 # corespond_val = list((h.values()))
 # print(corespond_key)
-#
+chars = ["a", "a", "b", "b", "c", "c", "c"]
 answer = []
 
 current = chars[0]
@@ -27,3 +27,5 @@ for i in range(1, len(chars)):
 
         current = chars[i]
         count = 1
+
+print(answer)
