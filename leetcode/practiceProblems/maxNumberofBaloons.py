@@ -1,3 +1,16 @@
 text = "loonbalxballpoon"
-h = {"b": 1, "a": 1, "l": 2, "o": 2, "n": 1}
-print(h)
+
+h = {}
+
+for letter in text:
+    h[letter] = h.get(letter, 0) + 1
+
+print(
+    min(
+        h.get("b", 0),
+        h.get("a", 0),
+        h.get("l", 0) // 2,
+        h.get("o", 0) // 2,
+        h.get("n", 0),
+    )
+)
