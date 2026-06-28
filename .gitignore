@@ -1,2 +1,33 @@
-.gitignore
 cf-solns_dev/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local scratch and temporary files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Compiled artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.class
